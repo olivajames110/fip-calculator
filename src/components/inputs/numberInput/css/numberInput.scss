@@ -1,0 +1,12 @@
+.number-input-wrapper {
+	// margin-right: 10px;
+
+	&::placeholder {
+		font-weight: normal;
+		opacity: .45;
+	}
+
+	.number-input-wrapper {
+		width: 100%;
+	}
+}

@@ -1,0 +1,29 @@
+.calculator-wrapper {
+	display: flex;
+	flex-direction: column;
+	// max-width: 1700px;
+	background-color: var(--bg-accent);
+	margin: 0 auto;
+	.group-container {
+		display: flex;
+		flex-wrap: wrap;
+		// display: grid;
+		// grid-template-columns: 3.4fr 5fr;
+		padding: 70px;
+		grid-gap: 50px;
+		max-width: 1700px;
+		margin: 0 auto;
+
+		.group-container_row {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 5px;
+
+			#cat-weight {
+				max-width: 410px;
+			}
+		}
+	}
+}

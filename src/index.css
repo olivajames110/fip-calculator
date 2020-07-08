@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,300&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,300&family=Open+Sans:wght@400;500;600;700&display=swap');
 
 * {
 	margin: 0;
@@ -13,8 +13,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	/* background-color: #f3f3f3; */
-	background-color: #f6f6f6;
-	font-weight: 600;
+	/* background-color: #f6f6f6; */
+	background-color: var(--bg-accent);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.5em;
 	color: #333;
 }
 
@@ -47,8 +50,9 @@ p {
 }
 
 h1 {
-	font-family: var(--nunito);
+	font-family: var(--openSans);
 	font-weight: 800;
+	margin-bottom: 15px;
 }
 
 h2 {
@@ -68,4 +72,24 @@ a {
 
 .title {
 	text-align: center;
+}
+
+ol {
+	margin-left: 30px;
+}
+
+li {
+	margin: 12px 0;
+}
+
+ul,
+menu,
+dir {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
 }

@@ -104,7 +104,7 @@ const Calculator = () => {
 	// );
 	return (
 		<div className="calculator-wrapper">
-			<div className="group-container">
+			<div className="group-container inner-wrapper">
 				<div className="group-container_row">
 					{group_fipType} {group_cat_weight}
 				</div>
@@ -115,7 +115,7 @@ const Calculator = () => {
 				fipType={fipType}
 				fipTypeMg={fipTypeMg}
 				// brand={2}
-				brandName={ brand }
+				brandName={brand}
 				weight={weight}
 				unit={isLBS}
 			/>

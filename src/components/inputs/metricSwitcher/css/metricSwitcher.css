@@ -10,7 +10,7 @@
 
 .metric-type-container .metric-type {
   position: relative;
-  font-size: 22px;
+  font-size: 14px;
   color: var(--inactive);
   -webkit-transition: 250ms;
   transition: 250ms;

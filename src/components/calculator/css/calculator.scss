@@ -1,6 +1,6 @@
 .calculator-wrapper {
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
 	// max-width: 1700px;
 	background-color: var(--bg-accent);
 	margin: 0 auto;
@@ -9,9 +9,9 @@
 		flex-wrap: wrap;
 		// display: grid;
 		// grid-template-columns: 3.4fr 5fr;
-		padding: 70px;
+		padding: 30px 0;
 		grid-gap: 50px;
-		max-width: 1700px;
+		// max-width: 1700px;
 		margin: 0 auto;
 
 		.group-container_row {

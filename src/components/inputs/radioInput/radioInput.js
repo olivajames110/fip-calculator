@@ -38,10 +38,16 @@ const NumberInput = ({ id, name, value, htmlFor, label, onClick, type, mgAmount,
 			<label className="label">
 				<input
 					ref={inputRef}
-					onClick={() => onClick({ value: inputRef.current.value, price: inputRef.current.dataset.price })}
+					onClick={() =>
+						onClick({
+							value : inputRef.current.value,
+							price : inputRef.current.dataset.price,
+							name  : inputRef.current.dataset.name
+						})}
 					type="radio"
 					id={id}
 					name={name}
+					data-name={type}
 					value={value}
 					data-price={price}
 				/>

@@ -1,6 +1,56 @@
-.title-container {
-  background-color: var(--bg-accent);
+.inner-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.intro-container {
   width: 100%;
-  padding: 30px;
+  padding: 20px 5px;
+}
+
+.calculator-description {
+  width: 100%;
+}
+
+.calculator-description p {
+  margin: 10px 0;
+}
+
+section#description {
+  background: #ffffff;
+}
+
+section#description .inner-wrapper {
+  gap: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 2fr;
+      grid-template-columns: 4fr 2fr;
+}
+
+section#description .result-container {
+  position: relative;
+  background-color: #f1f9ff;
+  margin: 20px;
+  padding: 15px;
+}
+
+section#description .result-container:after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+          transform: translateX(-50%) rotate(180deg);
+  border-left: 21px solid;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+#instructions span {
+  font-weight: bold;
 }
 /*# sourceMappingURL=app.css.map */

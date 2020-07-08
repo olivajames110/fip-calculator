@@ -55,6 +55,12 @@ const Result = ({ fipType, fipTypeMg, brandName, weight, unit }) => {
 		[ fipType, fipTypeMg, brandName, weight, unit ]
 	);
 
+	const resultBrandName = (
+		<span className="additional-info">
+			* Using {brandName.name} priced at ${brandName.price} per vial
+		</span>
+	);
+
 	// useEffect(
 	// 	() => {
 	// 		setBrand(brandName.value);
@@ -72,28 +78,35 @@ const Result = ({ fipType, fipTypeMg, brandName, weight, unit }) => {
 
 	return (
 		<div className="result-wrapper">
-			<div className="result-sections-container">
+			<div className="result-sections-container inner-wrapper">
 				<div id="daily-dosage" className="result-section">
-					<div className="title"> Daily Dosage</div>
+					<h2 className="title"> Daily Dosage of GS</h2>
 					<div className="results-container">
 						<div className="result-value">{checkNum(dailyDosage)}ml</div>
-						<div className="result-description">per dose</div>
+						<div className="result-description">
+							Given to your cat in mL (milliliters) via injection per every 24 hours
+						</div>
 					</div>
 				</div>
 
 				<div id="number-of-vials" className="result-section">
-					<div className="title"> Est. Number of Vials</div>
+					<h2 className="title"> Est. Number of Vials</h2>
 					<div className="results-container">
 						<div className="result-value">{checkNum(numOfVials)}</div>
-						<div className="result-description">per 12 week period</div>
+						<div className="result-description">
+							<span> Over 84 days of treatment</span>
+							<span className="additional-info">
+								* This value is always rounded up as you cannot purchase a partial vial
+							</span>
+						</div>
 					</div>
 				</div>
 
 				<div id="total-cost" className="result-section">
-					<div className="title">Est. Cost Of Treatment</div>
+					<h2 className="title">Est. Cost Of Treatment</h2>
 					<div className="results-container">
 						<div className="result-value">{checkNum(totalPrice)}</div>
-						<div className="result-description">per 12 week period</div>
+						<div className="result-description">Per 12 week period {brandName.name && resultBrandName}</div>
 					</div>
 				</div>
 			</div>

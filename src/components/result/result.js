@@ -57,27 +57,12 @@ const Result = ({ fipType, fipTypeMg, brandName, weight, unit }) => {
 
 	const resultBrandName = (
 		<span className="additional-info">
-			* Using {brandName.name} priced at ${brandName.price} per vial
+			* Using {brandName.name} priced at ${brandName.price} per vialgi
 		</span>
 	);
 
-	// useEffect(
-	// 	() => {
-	// 		setBrand(brandName.value);
-	// 		setPrice(brandName.price);
-	// 		console.log('fipType: ', fipType);
-	// 		console.log('fipTypeMg: ', fipTypeMg);
-	// 		console.log('weight: ', weight);
-	// 		console.log('brandName: ', brandName);
-	// 		console.log('brand: ', brand);
-	// 		console.log('unit: ', unit);
-	// 		console.log('-------------------------');
-	// 	},
-	// 	[ fipType, fipTypeMg, brandName, brand, weight, unit ]
-	// );
-
 	return (
-		<div className="result-wrapper">
+		<div className="result-wrapper a">
 			<div className="result-sections-container inner-wrapper">
 				<div id="daily-dosage" className="result-section">
 					<h2 className="title"> Daily Dosage of GS</h2>

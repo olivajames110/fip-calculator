@@ -5,7 +5,8 @@
 
 .intro-container {
   width: 100%;
-  padding: 20px 5px;
+  padding: 20px;
+  max-width: 815px;
 }
 
 .calculator-description {
@@ -21,11 +22,15 @@ section#description {
 }
 
 section#description .inner-wrapper {
-  gap: 50px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 4fr 2fr;
-      grid-template-columns: 4fr 2fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#description #instructions {
+  max-width: 365px;
 }
 
 section#description .result-container {

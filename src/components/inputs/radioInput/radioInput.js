@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './css/radioInput.css';
 
-const NumberInput = ({ id, name, value, htmlFor, label, onClick, type, mgAmount, price }) => {
+const NumberInput = ({ id, name, value, htmlFor, label, onClick, type, mgAmount, price, unit, element }) => {
 	let inputRef = useRef();
 
 	// const checkIfActive = function(e) {
@@ -12,6 +12,7 @@ const NumberInput = ({ id, name, value, htmlFor, label, onClick, type, mgAmount,
 	const single = (
 		<div className="checkbox">
 			<span className="type">{type}</span>
+			<span className="mg-amount">{`$${price} per ${unit}`}</span>
 		</div>
 	);
 
@@ -19,10 +20,18 @@ const NumberInput = ({ id, name, value, htmlFor, label, onClick, type, mgAmount,
 		<div className="checkbox">
 			<span className="type">{type}</span>
 			<span className="mg-amount">
-				{mgAmount === typeof String ? mgAmount : `${mgAmount}mg/ml | $${price}/vial`}
+				{mgAmount === typeof String ? mgAmount : `${mgAmount}mg/ml | $${price}/${unit}`}
 			</span>
 		</div>
 	);
+
+	const element_single = (
+		<div className="checkbox">
+			<span className="type">{type}</span>
+		</div>
+	);
+
+	const element_double = !mgAmount ? single : double;
 
 	// const double_alt = (
 	// 	<div className="checkbox">
@@ -51,7 +60,7 @@ const NumberInput = ({ id, name, value, htmlFor, label, onClick, type, mgAmount,
 					value={value}
 					data-price={price}
 				/>
-				{!mgAmount ? single : double}
+				{element === 'single' ? element_single : element_double}
 			</label>
 		</div>
 	);

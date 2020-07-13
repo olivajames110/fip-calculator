@@ -45,7 +45,9 @@
 			.title {
 				font-size: 15px;
 				font-weight: bold;
+				font-family: var(--openSans);
 				// opacity: .9;
+				text-transform: uppercase;
 				color: #333;
 			}
 			.results-container {
@@ -57,7 +59,8 @@
 					position: relative;
 					font-size: 36px;
 					line-height: 1.5em;
-					color: #47657a;
+					color: var(--calc-heading);
+					// color: #47657a;
 					font-weight: bold;
 				}
 				.result-description {
@@ -77,5 +80,15 @@
 				}
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.result-sections-container {
+		justify-content: center !important;
+	}
+
+	.result-section {
+		margin-bottom: 50px;
 	}
 }

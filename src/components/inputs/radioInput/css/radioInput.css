@@ -31,19 +31,19 @@
 
 .radio-input-wrapper .label .type {
   font-size: 14px;
+  font-weight: 600;
 }
 
 .radio-input-wrapper .label .mg-amount {
-  margin-top: 5px;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 500;
 }
 
 .radio-input-wrapper .label input:checked ~ .checkbox {
   border-radius: 2px;
-  color: #47657a;
-  -webkit-box-shadow: 0px 0px 0px 2px #47657a;
-          box-shadow: 0px 0px 0px 2px #47657a;
+  color: var(--calc-heading);
+  -webkit-box-shadow: 0px 0px 0px 2px var(--calc-heading);
+          box-shadow: 0px 0px 0px 2px var(--calc-heading);
   font-weight: bold;
 }
 
@@ -63,10 +63,12 @@
           align-items: center;
   padding: 22px 0;
   width: 100%;
+  text-align: center;
   height: 100%;
   cursor: pointer;
   -webkit-transition: 140ms;
   transition: 140ms;
+  min-width: 100px;
 }
 
 .radio-input-active {

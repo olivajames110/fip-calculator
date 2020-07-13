@@ -26,10 +26,13 @@ code {
 }
 
 :root {
+	--calc-heading: #cb4154;
 	--bg: #242526;
-	--bg-accent: #daecf9;
+	--bg-accent: #fbf1f2;
+	/* --bg-accent: #daecf9; */
 	--inactive: #b5b5b5;
-	--primary: #5ea0f6;
+	--primary: #fbf1f2;
+	/* --primary: #5ea0f6; */
 	--bluePrimary: #1877f2;
 	--blueAccent: #abc7e6;
 	--text-color: #dadce1;

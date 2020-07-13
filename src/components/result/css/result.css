@@ -63,6 +63,8 @@
 .result-wrapper .result-sections-container .result-section .title {
   font-size: 15px;
   font-weight: bold;
+  font-family: var(--openSans);
+  text-transform: uppercase;
   color: #333;
 }
 
@@ -86,7 +88,7 @@
   position: relative;
   font-size: 36px;
   line-height: 1.5em;
-  color: #47657a;
+  color: var(--calc-heading);
   font-weight: bold;
 }
 
@@ -104,5 +106,16 @@
   font-size: 12px;
   font-style: italic;
   margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .result-sections-container {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .result-section {
+    margin-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=result.css.map */

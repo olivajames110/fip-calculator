@@ -37,13 +37,19 @@ const Calculator = () => {
 							type={type.type}
 							mgAmount={type.mgAmount}
 							value={type.type}
+							element="single"
 						/>
 					))}
 				</div>
 			</div>
 			<div className="unit-container">
 				<div className="group-description">Select Unit Amount</div>
-				<SelectInput onChange={setfipTypeMg} suffix="mg" unit={isLBS} options={[ 5, 6, 7, 8, 9, 10 ]} />
+				<SelectInput
+					onChange={setfipTypeMg}
+					suffix="mg"
+					unit={isLBS}
+					options={[ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]}
+				/>
 			</div>
 		</Group>
 	);
@@ -91,6 +97,7 @@ const Calculator = () => {
 					mgAmount={type.mgAmount}
 					value={type.mgAmount}
 					price={type.price}
+					unit={type.unit}
 				/>
 			))}
 		</Group>

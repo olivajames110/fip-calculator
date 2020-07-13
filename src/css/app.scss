@@ -6,7 +6,8 @@
 .intro-container {
 	// background-color: var(--bg-accent);
 	width: 100%;
-	padding: 20px 5px;
+	padding: 20px;
+	max-width: 815px;
 	// margin: 0 10px;
 }
 
@@ -20,9 +21,15 @@
 section#description {
 	background: #ffffff;
 	.inner-wrapper {
-		gap: 50px;
-		display: grid;
-		grid-template-columns: 4fr 2fr;
+		display: flex;
+		flex-wrap: wrap;
+		// gap: 50px;
+		// display: grid;
+		// grid-template-columns: 4fr 2fr;
+	}
+
+	#instructions {
+		max-width: 365px;
 	}
 	.result-container {
 		position: relative;

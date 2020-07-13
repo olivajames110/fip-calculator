@@ -1,22 +1,28 @@
 .group-wrapper {
 	position: relative;
 	background-color: #ffffff;
-	margin: 5px;
+	margin: 10px;
 	// box-shadow: 1px 1px 4px 1px #00000026;
 	height: 98%;
 	width: 100%;
 	padding: 15px 25px;
 	font-size: 14px;
+	box-shadow: 1px 1px 2px 1px #0000000d;
 	h2 {
-		border-bottom: 1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6a1;
 		line-height: 1.8em;
-		font-size: 18px;
-		color: #47657a;
+		font-size: 17px;
+		// text-transform: uppercase;
+		font-weight: bold;
+		// font-size: 18px;
+		// color: var(--calc-heading);
+		color: #3b3839;
 		// text-align: center;
 	}
 	.group-description {
-		margin-top: 10px;
-		margin-bottom: 20px;
+		margin-top: 5px;
+		font-size: 13px;
+		margin-bottom: 15px;
 		opacity: .75;
 	}
 
@@ -29,24 +35,19 @@
 		// grid-template-columns: 3fr, 1fr;
 		grid-template-columns: 3.2fr 1fr;
 		position: relative;
-		gap: 60px;
+		gap: 40px;
 		.fip-options {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			gap: 15px;
 		}
-		select {
-			// font-family: var(--openSans);
-			// width: 100%;
-			// padding: 12px;
-			// border: 1px solid #dadada;
-			// border-radius: 2px;
-			// font-size: 16px;
+		.unit-container {
+			min-width: 100px;
 		}
 	}
 
 	#brand-concentration-of-gs-options {
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	#cat-weight-options {
@@ -86,13 +87,52 @@
 		// width: 90px;
 		font-size: 14px;
 		// text-align: center;
-		font-weight: 800;
+		font-weight: inherit;
 		font-family: var(--nunito);
-		color: #47657a;
+		color: inherit;
+		// color: var(--calc-heading);
 		padding: 12px;
 		// padding-left: 7px;
 		// padding-right: 0px;
 		width: 100%;
 		// height: 58px;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.group-wrapper #type-of-fip-options .fip-options {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.group-wrapper #type-of-fip-options {
+		grid-template-columns: 1fr;
+		position: relative;
+		grid-gap: 15px;
+	}
+	.group-container_row {
+		flex-wrap: wrap;
+	}
+
+	.calculator-wrapper .group-container .group-container_row #cat-weight,
+	.group-wrapper #cat-weight-options .number-input-wrapper {
+		max-width: 100% !important;
+	}
+	.group-wrapper {
+		height: unset !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.group-wrapper #brand-concentration-of-gs-options,
+	.group-wrapper #type-of-fip-options .fip-options {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+
+	.group-wrapper #type-of-fip-options {
+		grid-template-columns: 1fr !important;
+	}
+
+	.group-container_row {
+		flex-wrap: wrap;
 	}
 }

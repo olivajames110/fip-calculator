@@ -1,0 +1,24 @@
+.number-input-wrapper::-webkit-input-placeholder {
+  font-weight: normal;
+  opacity: .45;
+}
+
+.number-input-wrapper:-ms-input-placeholder {
+  font-weight: normal;
+  opacity: .45;
+}
+
+.number-input-wrapper::-ms-input-placeholder {
+  font-weight: normal;
+  opacity: .45;
+}
+
+.number-input-wrapper::placeholder {
+  font-weight: normal;
+  opacity: .45;
+}
+
+.number-input-wrapper .number-input-wrapper {
+  width: 100%;
+}
+/*# sourceMappingURL=numberInput.css.map */

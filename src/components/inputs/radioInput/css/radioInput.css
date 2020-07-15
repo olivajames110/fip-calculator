@@ -1,0 +1,77 @@
+.radio-input-wrapper {
+  position: relative;
+  background: white;
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid #dadada;
+}
+
+.radio-input-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.radio-input-wrapper .label {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio-input-wrapper .label .type {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.radio-input-wrapper .label .mg-amount {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.radio-input-wrapper .label input:checked ~ .checkbox {
+  border-radius: 2px;
+  color: var(--calc-heading);
+  -webkit-box-shadow: 0px 0px 0px 2px var(--calc-heading);
+          box-shadow: 0px 0px 0px 2px var(--calc-heading);
+  font-weight: bold;
+}
+
+.radio-input-wrapper .label .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px 0;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: 140ms;
+  transition: 140ms;
+  min-width: 100px;
+}
+
+.radio-input-active {
+  border: 1px solid var(--blueAccent);
+}
+/*# sourceMappingURL=radioInput.css.map */

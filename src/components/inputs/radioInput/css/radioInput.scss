@@ -1,0 +1,64 @@
+.radio-input-wrapper {
+	position: relative;
+	// padding: 50px 0;
+	background: white;
+	display: inline-block;
+	border-radius: 2px;
+	border: 1px solid #dadada;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		width: 0;
+		height: 0;
+	}
+
+	.label {
+		// position: relative;
+		// padding-left: 28px;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.type {
+			font-size: 14px;
+			font-weight: 600;
+		}
+		.mg-amount {
+			// margin-top: 5px;
+			font-size: 11px;
+			font-weight: 500;
+			// font-weight: bold;
+		}
+		input:checked ~ .checkbox {
+			border-radius: 2px;
+			color: var(--calc-heading);
+			box-shadow: 0px 0px 0px 2px var(--calc-heading);
+			// color: #47657a;
+			// box-shadow: 0px 0px 0px 2px #47657a;
+			font-weight: bold;
+		}
+		.checkbox {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 22px 0;
+			width: 100%;
+			text-align: center;
+			height: 100%;
+			cursor: pointer;
+			transition: 140ms;
+			min-width: 100px;
+			&:hover {
+				// background-color: rgba(0, 0, 0, 0.027);
+			}
+		}
+	}
+}
+
+.radio-input-active {
+	border: 1px solid var(--blueAccent);
+}

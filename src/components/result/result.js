@@ -57,7 +57,7 @@ const Result = ({ fipType, fipTypeMg, brandName, weight, unit }) => {
 
 	const resultBrandName = (
 		<span className="additional-info">
-			* Using {brandName.name} priced at ${brandName.price} per vialgi
+			* Using {brandName.name} priced at ${brandName.price} per vial
 		</span>
 	);
 

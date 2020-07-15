@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fip-calculator/precache-manifest.1e6d675e080ce4a6a53b2e3bb5e471a9.js"
+  "/fip-calculator/precache-manifest.03d5db809aca23eb43cfafa2e3a2cbc1.js"
 );
 
 self.addEventListener('message', (event) => {
